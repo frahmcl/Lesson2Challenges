@@ -1,11 +1,20 @@
 package com.ChrisFrahm;
 
+/**
+ * @author Chris Frahm
+ * Class to get average and throw exception
+ */
 public class TestScores {
     double[] scores;
     public TestScores (double[] testScoreArray){
         this.scores = testScoreArray;
     }
 
+    /**
+     *
+     * @return average
+     * @throws InvalidTestScore
+     */
     public double testScoreAverage() throws InvalidTestScore {
         double totalScore = 0;
         double averageScore = 0;
